@@ -1,0 +1,950 @@
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rowdies:wght@300;400;700&family=Rubik+Wet+Paint&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+}
+
+/* NAV BAR */
+header {
+    position: fixed;
+    z-index: 2;
+    height: 10vh;
+    width: 100%;
+}
+
+nav {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* LOGO */
+.logo {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    height: 100%;
+    width: 15%;
+    border-radius: 50%;
+}
+
+/* NAV CONTENT */
+nav ul {
+    height: 100%;
+    width: 60%;
+    display: flex;
+}
+
+nav ul li {
+    height: 100%;
+    width: 20%;
+    list-style: none;
+    align-content: center;
+}
+
+nav ul li a {
+    height: 100%;
+    width: 100%;
+    font-size: clamp(14px, 2vw, 24px);
+    text-decoration: none;
+    color: snow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li a:hover {
+    color: #80C4E9;
+    text-shadow: 4px 4px 40px white;
+    transform: scale(1.1);
+}
+
+nav ul li #contact {
+    height: 55%;
+    width: 80%;
+    background-color: rgb(55, 221, 243);
+    border-radius: 10px;
+    color: black;
+}
+
+/* ALL SECTION */
+section {
+    height: 100vh;
+    width: 100%;
+}
+
+/* HOME SECTION */
+.home {
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+}
+
+.content {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.content .details {
+    height: 100%;
+    width: 50%;
+    padding-left: 7%;
+    line-height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.content .details span {
+    color: gray;
+    font-size: clamp(14px, 2vw, 24px);
+}
+
+.content .details h1 {
+    color: rgb(6, 194, 194);
+    font-size: clamp(35px, 5vw, 60px);
+}
+
+.content .details p {
+    color: snow;
+    font-size: clamp(21px, 3vw, 36px);
+}
+
+.content .details .cv {
+    height: 8vh;
+    width: 25%;
+}
+
+.content .details .cv a {
+    text-decoration: none;
+    padding: 7% 30%;
+    border-radius: 10px;
+    box-shadow: 1px 1px 30px aquamarine;
+    cursor: pointer;
+    font-size: clamp(21px, 3vw, 36px);
+    background-color: aquamarine;
+}
+
+.content .details .icon {
+    height: 20%;
+    width: 50%;
+    align-content: center;
+}
+
+.content .details .icon,
+.content .details .icon .fa {
+    animation: slide-left 2s linear;
+}
+
+.content .details .icon .fa {
+    font-size: clamp(21px, 3vw, 32px);
+    text-decoration: none;
+    letter-spacing: 20px;
+    color: snow;
+}
+
+.content .details .icon .fa-facebook:hover {
+    color: blue;
+    text-shadow: 4px 4px 30px;
+}
+
+.content .details .icon .fa-instagram:hover {
+    color: tomato;
+    text-shadow: 4px 4px 30px;
+}
+
+.content .details .icon .fa-linkedin:hover {
+    color: blue;
+    text-shadow: 4px 4px 30px;
+}
+
+.content .details .icon .fa-github:hover {
+    text-shadow: 4px 4px 30px;
+}
+
+.content .details .icon .fa-whatsapp:hover {
+    color: green;
+    text-shadow: 4px 4px 30px;
+}
+
+.content .photo {
+    height: 100%;
+    width: 50%;
+}
+
+.content .photo {
+    height: 100%;
+    width: 50%;
+    position: relative;
+}
+
+.content .photo img {
+    position: absolute;
+    top: 18%;
+    right: 30%;
+    width: 45%;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.content .photo .box {
+    width: 45%;
+    height: 70%;
+    position: absolute;
+    right: 25%;
+    top: 12%;
+    border-radius: 10px;
+    background-color: aqua;
+}
+
+.content .photo .box1 {
+    position: absolute;
+    top: 2.5%;
+    left: 15px;
+    height: 95%;
+    width: 92%;
+    background-color: black;
+}
+
+/* ABOUT SECTION */
+
+.about .heading {
+    height: 10%;
+    width: 100%;
+}
+
+.about .heading h1 {
+    font-size: clamp(35px, 5vw, 60px);
+    color: gray;
+    text-align: center;
+}
+
+.about .side {
+    height: 90%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about .side .about-me {
+    height: 80%;
+    width: 70%;
+    padding: 2%;
+    margin-left: 5%;
+    background-color: rgba(10, 10, 10, 0.9);
+    color: snow;
+    border: 1px solid snow;
+    border-radius: 10px;
+}
+
+.about .side .about-me h1 {
+    color: seashell;
+    font-size: clamp(21px, 3vw, 36px);
+}
+
+.about .side .about-me h1 span {
+    color: aqua;
+}
+
+.about .side .about-me p {
+    text-align: justify;
+    text-indent: 10%;
+    color: gray;
+    font-size: clamp(14px, 2.5vw, 30px);
+}
+
+/* PROJECT */
+aside {
+    width: 100%;
+}
+
+.project {
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.project .heading {
+    width: 100%;
+    display: flex;
+    padding-top: 2%;
+    align-items: center;
+    justify-content: center;
+}
+
+.project .heading h1 {
+    font-size: clamp(35px, 5vw, 60px);
+    color: gray;
+}
+
+.project .project-1 {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* PROJECT SCREENSHOT */
+.project .project-1 .project-01 {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.project .project-1 .project-01 img {
+    width: 80%;
+    border-radius: 10px;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    z-index: 1;
+}
+
+.project .project-1 .project-01 .box {
+    width: 80%;
+    height: 47%;
+    position: absolute;
+    top: 35%;
+    left: 15%;
+    border-radius: 10px;
+    background-color: aqua;
+}
+
+.project .project-1 .project-01 .box1 {
+    height: 92%;
+    width: 96%;
+    background-color: black;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+}
+
+/* PROJECT DETAILS */
+.project .project-1 .content {
+    height: 100%;
+    width: 100%;
+    margin-left: 8%;
+}
+
+.project .project-1 .content .content-details {
+    color: snow;
+    height: 80%;
+}
+
+.project .project-1 .content .content-details h2 {
+    font-size: clamp(28px, 4vw, 48px);
+    margin-bottom: 20px;
+    color: aquamarine;
+}
+
+.project .project-1 .content .content-details span {
+    font-size: clamp(21px, 3vw, 36px);
+}
+
+.project .project-1 .content p {
+    border-radius: 10px;
+    width: 90%;
+    text-align: justify;
+    margin-top: 20px;
+    padding: 2%;
+    text-indent: 10%;
+    font-size: clamp(14px, 1.5vw, 24px);
+    background-color: rgba(0, 0, 0, 1);
+    border: 1px solid snow;
+    color: snow;
+}
+
+.project .project-1 .content .content-details p {
+    color: gray;
+}
+
+/* EDUCATION QUALIFICATION */
+.education {
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.education .title {
+    height: 10vh;
+    width: 100%;
+    text-align: center;
+}
+
+.education .title h1 {
+    color: gray;
+    font-size: clamp(35px, 5vw, 60px);
+}
+
+.education .course {
+    height: 15vh;
+    width: 80%;
+    border-radius: 10px;
+    display: flex;
+    background-color: rgb(10, 10, 10, 0.9);
+    border: 1px solid snow;
+}
+
+.education .course .year {
+    height: 100%;
+    width: 25%;
+    align-content: center;
+    padding-left: 2%;
+    color: snow;
+    font-size: clamp(21px, 3vw, 36px);
+}
+
+.education .course .c-name {
+    height: 100%;
+    width: 70%;
+    align-content: center;
+    color: snow;
+    font-size: clamp(14px, 2vw, 24px);
+}
+
+.education .course .per {
+    height: 100%;
+    width: 20%;
+    margin-left: 5%;
+    align-content: center;
+}
+
+.education .course .c-name span {
+    color: gray;
+}
+
+.education .course .circul {
+    font-size: clamp(14px, 2vw, 24px);
+    width: 80px;
+    height: 80px;
+    right: 10%;
+    border-radius: 50%;
+    background: radial-gradient(closest-side, rgba(10, 10, 10, 1) 83%, transparent 80% 100%),
+        conic-gradient(white 83%, transparent 0);
+    animation: fillAnimation 3s linear;
+}
+
+.education .course .circul1 {
+    font-size: clamp(14px, 2vw, 24px);
+    width: 80px;
+    height: 80px;
+    right: 10%;
+    border-radius: 50%;
+    background: radial-gradient(closest-side, rgba(10, 10, 10, 1) 83%, transparent 80% 100%),
+        conic-gradient(white 65%, transparent 0);
+    animation: fillAnimation 3s linear;
+}
+
+.education .course .circul2 {
+    font-size: clamp(14px, 2vw, 24px);
+    width: 80px;
+    height: 80px;
+    right: 10%;
+    border-radius: 50%;
+    background: radial-gradient(closest-side, rgba(10, 10, 10, 1) 83%, transparent 80% 100%),
+        conic-gradient(white 72%, transparent 0);
+    animation: fillAnimation 3s linear;
+}
+
+.education .course .circul span,
+.circul1 span,
+.circul2 span {
+    position: relative;
+    left: 12px;
+    top: 20px;
+    color: snow;
+    font-size: 2rem;
+}
+
+/* SKILLS */
+.education .skill {
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.education .skill .skill-name {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.education .skill img {
+    height: 40%;
+    animation: pulsate 2s infinite;
+    cursor: pointer;
+}
+
+.education .skill .skill-name span {
+    color: snow;
+    font-size: clamp(14px, 2vw, 24px);
+}
+
+/* SERVICE */
+.service {
+    height: 100%;
+    width: 100%;
+}
+
+.service .title {
+    height: 10vh;
+    width: 100%;
+    color: gray;
+    font-size: clamp(21px, 3vw, 36px);
+    text-align: center;
+}
+
+.service .card {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10%;
+}
+
+.service .card .box1 {
+    height: 45%;
+    width: 35%;
+    box-shadow: 3px 0px 10px 3px #4335a7;
+    border-radius: 10px;
+    background: linear-gradient(to left, #4335A7, #80C4E9);
+}
+
+.service .card .box1 .box {
+    height: 94%;
+    width: 97%;
+    margin: 8px 0 0 6px;
+    background-color: rgba(10, 10, 10, 1);
+    border-radius: 10px;
+}
+
+.service .card .box1 .box .head {
+    height: 20%;
+    width: 100%;
+    display: flex;
+}
+
+.service .card .box1 .box .head .logo {
+    height: 100%;
+    width: 30%;
+}
+
+.service .card .box1 .box .head .logo img {
+    height: 100%;
+    width: 35%;
+}
+
+.service .card .box1 .box .head .title {
+    height: 100%;
+    width: 70%;
+    color: aqua;
+    align-content: center;
+    font-size: clamp(14px, 2vw, 24px);
+}
+
+.service .card .box1 .box .content {
+    height: 80%;
+    width: 100%;
+    padding: 2%;
+    text-indent: 10%;
+    color: gray;
+    text-align: justify;
+    font-size: clamp(10px, 1.3vw, 24px);
+}
+
+/* CONTACT */
+footer {
+    width: 100%;
+}
+
+.contact {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact .title {
+    height: 15vh;
+    width: 100%;
+    text-align: center;
+    color: gray;
+    font-size: clamp(21px, 3vw, 36px);
+}
+
+.contact .contact-me {
+    height: 85vh;
+    width: 90%;
+    display: flex;
+    border: 1px solid snow;
+    border-top-right-radius: 100px;
+    border-top-left-radius: 100px;
+    background-color: rgba(10, 10, 10, 0.9);
+}
+
+.contact .contact-me .contact-get {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.contact .contact-me .contact-get .contact-left {
+    height: 75vh;
+    width: 60%;
+    margin: 5% 0 0 5%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.contact .contact-me .contact-get .contact-left h1 {
+    color: snow;
+    font-size: clamp(35px, 5vw, 60px);
+}
+
+.contact .contact-me .contact-get .contact-left label {
+    color: snow;
+    font-size: clamp(14px, 2vw, 24px);
+}
+
+.contact .contact-me .contact-get .contact-left input {
+    height: 7vh;
+    width: 50%;
+    margin-left: 5%;
+    outline: none;
+    background-color: transparent;
+    padding-left: 10px;
+    border-radius: 10px;
+    color: snow;
+}
+
+.contact .contact-me .contact-get .contact-left input:focus {
+    background-color: rgba(10, 10, 10, 1);
+}
+
+.contact .contact-me .contact-get .contact-left textarea {
+    background-color: rgba(10, 10, 10, 1);
+    border-radius: 10px;
+    width: 60%;
+    color: snow;
+    margin-left: 5%;
+}
+
+.contact .contact-me .contact-get .contact-left button {
+    height: 6vh;
+    width: 25%;
+    font-size: clamp(14px, 2vw, 24px);
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background-color: #80C4E9;
+}
+
+.contact .contact-me .contact-get .contact-r {
+    height: 80%;
+    width: 50%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+}
+
+.contact .contact-me .contact-get .contact-r p {
+    font-size: clamp(14px, 2vw, 24px);
+    color: gray;
+}
+
+.contact-me  h1 {
+    font-size: clamp(35px, 3vw, 60px);
+    color: snow;
+}
+
+.contact-me .contact-r .contact-phone img, .contact-me .contact-r .contact-mail img {
+    height: 48px;
+}
+
+.contact-me .contact-r .contact-phone, .contact-me .contact-r .contact-mail {
+    height: 15%;
+    width: 80%;
+    color: snow;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.contact-me .contact-r .contact-phone span, .contact-me .contact-r .contact-mail span {
+    font-size: 1.3rem;
+    margin-left: 3%;
+}
+
+@keyframes slide-left {
+    from {
+        margin-left: -20%;
+    }
+
+    to {
+        margin: 0;
+    }
+}
+
+@keyframes pulsate {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+@keyframes blink-cursor {
+    50% {
+        border-right-color: snow;
+    }
+}
+
+.slide-in-photo {
+    animation: slide 1.5s linear forwards;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(20%);
+        opacity: -1;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.slide-next-photo {
+    animation: slide-next 1.5s linear forwards;
+}
+
+@keyframes slide-next {
+    from {
+        transform: translateX(-20%);
+        opacity: -1;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.slide-up {
+    animation: slide-up-next 2s linear;
+}
+
+@keyframes slide-up-next {
+    from {
+        transform: translateY(-30%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.scale-out {
+    animation: scale-up 1s linear;
+}
+
+@keyframes scale-up {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@media all and (max-width:576px) {
+    .logo {
+        width: 20%;
+    }
+
+    .logo img {
+        height: 60%;
+        width: 60%;
+    }
+
+    nav ul{
+        width: 80%;
+    }
+
+    nav ul li a {
+        font-size: 0.7rem;
+    }
+
+    nav ul li #contact {
+        height: 30%;
+        width: 100%;
+    }
+
+    .content .photo {
+        all: unset;
+        display: none;
+    }
+
+    .content .details {
+        height: 100%;
+        width: 100%;
+        line-height: 35px;
+    }
+
+    .content .details .icon {
+        height: 10%;
+        width: 60%;
+    }
+
+    .about .heading {
+        height: 1vh;
+    }
+
+    .about .side .about-me {
+        width: 80%;
+    }
+
+    .education .course .year {
+        width: 20%;
+        font-size: 1rem;
+    }
+
+    .education .course .c-name {
+        width: 60%;
+    }
+
+    .education .course .c-name h1 {
+        font-size: 1rem;
+    }
+
+    .education .course .c-name span {
+        font-size: 0.8rem;
+
+    }
+
+    .education .course .per {
+        width: 20%;
+    }
+
+    .education .course .per .circul, .education .course .per .circul1, .education .course .per .circul2 {
+        width: 70%;
+        height: 50%;
+    }
+
+    .education .course .per .circul span,.education .course .per .circul1 span, .education .course .per .circul2 span {
+        font-size: 0.7rem;    
+    }
+
+    .service .card {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0;
+    }
+
+    .service .card .box1 {
+        width: 90%;
+        height: 22%;
+        box-shadow: 2px 0px 10px 2px rgb(29, 29, 124);
+    }
+
+    .service .card .box1 .box {
+        margin: 1% 0 0 1%;
+    }
+
+    .project .project-1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project .project-1 .project-01 .box {
+        height: 60%;
+    }
+
+    .project .project-1 .project-01 .box .box1 {
+        height: 90%;
+        width: 95%;
+        margin: -1% 0 0 -1%;
+    }
+
+    .contact .contact-me {
+        border-radius: none;
+    }
+    .contact .contact-me .contact-get .contact-left {
+        width: 100%;
+        margin-left: 10%;
+    }
+
+    .contact .contact-me .contact-get .contact-left input {
+        width: 80%;
+    }
+
+    .contact .contact-me .contact-get .contact-left textarea {
+        width: 80%;
+    }
+
+    .contact .contact-me .contact-get .contact-r {
+        display: none;
+    }
+
+    .contact .contact-me .contact-get .contact-left button {
+        font-size: 1.3rem;
+        height: 8%;
+    }
+}
+
+#app {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+}
