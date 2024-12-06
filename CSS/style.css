@@ -273,7 +273,7 @@ section {
     text-align: justify;
     text-indent: 10%;
     color: gray;
-    font-size: clamp(14px, 2.5vw, 30px);
+    font-size: clamp(14px, 2vw, 30px);
 }
 
 /* PROJECT */
