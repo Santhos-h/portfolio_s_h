@@ -806,7 +806,7 @@ footer {
     }
 }
 
-@media all and (max-width:576px) {
+@media all and (max-width:586px) {
     .logo {
         width: 20%;
     }
