@@ -119,27 +119,27 @@ section {
 
 .content .details span {
     color: gray;
-    font-size: clamp(14px, 2vw, 24px);
+    font-size: clamp(30px, 2vw, 24px);
 }
 
 .content .details h1 {
     color: rgb(6, 194, 194);
-    font-size: clamp(35px, 5vw, 60px);
+    font-size: clamp(45px, 5vw, 60px);
 }
 
 .content .details p {
     color: snow;
-    font-size: clamp(21px, 3vw, 36px);
+    font-size: clamp(25px, 3vw, 36px);
 }
 
 .content .details .cv {
-    height: 8vh;
+    height: 5vh;
     width: 25%;
 }
 
 .content .details .cv a {
     text-decoration: none;
-    padding: 7% 30%;
+    padding: 3% 30%;
     border-radius: 10px;
     box-shadow: 1px 1px 30px aquamarine;
     cursor: pointer;
@@ -159,7 +159,7 @@ section {
 }
 
 .content .details .icon .fa {
-    font-size: clamp(21px, 3vw, 32px);
+    font-size: clamp(23px, 3vw, 32px);
     text-decoration: none;
     letter-spacing: 20px;
     color: snow;
@@ -273,7 +273,7 @@ section {
     text-align: justify;
     text-indent: 10%;
     color: gray;
-    font-size: clamp(14px, 2vw, 30px);
+    font-size: clamp(17px, 2vw, 30px);
 }
 
 /* PROJECT */
@@ -325,7 +325,7 @@ aside {
 }
 
 .project .project-1 .project-01 .box {
-    width: 80%;
+    width: 82%;
     height: 47%;
     position: absolute;
     top: 35%;
@@ -406,6 +406,7 @@ aside {
 .education .course {
     height: 15vh;
     width: 80%;
+    padding: 5px;
     border-radius: 10px;
     display: flex;
     background-color: rgb(10, 10, 10, 0.9);
@@ -423,7 +424,7 @@ aside {
 
 .education .course .c-name {
     height: 100%;
-    width: 70%;
+    width: 72%;
     align-content: center;
     color: snow;
     font-size: clamp(14px, 2vw, 24px);
@@ -477,8 +478,8 @@ aside {
 .circul1 span,
 .circul2 span {
     position: relative;
-    left: 12px;
-    top: 20px;
+    left: 9px;
+    top: 11px;
     color: snow;
     font-size: 2rem;
 }
@@ -544,6 +545,7 @@ aside {
 .service .card .box1 .box {
     height: 94%;
     width: 97%;
+    padding: 5px;
     margin: 8px 0 0 6px;
     background-color: rgba(10, 10, 10, 1);
     border-radius: 10px;
@@ -557,7 +559,7 @@ aside {
 
 .service .card .box1 .box .head .logo {
     height: 100%;
-    width: 30%;
+    width: 25%;
 }
 
 .service .card .box1 .box .head .logo img {
@@ -570,7 +572,7 @@ aside {
     width: 70%;
     color: aqua;
     align-content: center;
-    font-size: clamp(14px, 2vw, 24px);
+    font-size: clamp(15px, 2vw, 24px);
 }
 
 .service .card .box1 .box .content {
@@ -605,7 +607,7 @@ footer {
 }
 
 .contact .contact-me {
-    height: 85vh;
+    height: 80vh;
     width: 90%;
     display: flex;
     border: 1px solid snow;
@@ -670,7 +672,8 @@ footer {
     border-radius: 10px;
     outline: none;
     border: none;
-    background-color: #80C4E9;
+    margin-top: 10px;
+    background-color: #33a9e9;
 }
 
 .contact .contact-me .contact-get .contact-r {
@@ -688,16 +691,18 @@ footer {
     color: gray;
 }
 
-.contact-me  h1 {
+.contact-me h1 {
     font-size: clamp(35px, 3vw, 60px);
     color: snow;
 }
 
-.contact-me .contact-r .contact-phone img, .contact-me .contact-r .contact-mail img {
+.contact-me .contact-r .contact-phone img,
+.contact-me .contact-r .contact-mail img {
     height: 48px;
 }
 
-.contact-me .contact-r .contact-phone, .contact-me .contact-r .contact-mail {
+.contact-me .contact-r .contact-phone,
+.contact-me .contact-r .contact-mail {
     height: 15%;
     width: 80%;
     color: snow;
@@ -706,7 +711,8 @@ footer {
     justify-content: start;
 }
 
-.contact-me .contact-r .contact-phone span, .contact-me .contact-r .contact-mail span {
+.contact-me .contact-r .contact-phone span,
+.contact-me .contact-r .contact-mail span {
     font-size: 1.3rem;
     margin-left: 3%;
 }
@@ -806,7 +812,7 @@ footer {
     }
 }
 
-@media all and (max-width:767px) {
+@media all and (max-width:586px) {
     .logo {
         width: 20%;
     }
@@ -816,7 +822,7 @@ footer {
         width: 60%;
     }
 
-    nav ul{
+    nav ul {
         width: 80%;
     }
 
@@ -841,8 +847,12 @@ footer {
     }
 
     .content .details .icon {
-        height: 10%;
+        height: 15%;
         width: 60%;
+    }
+
+    .content .details .icon a {
+        font-size: 10rem;
     }
 
     .about .heading {
@@ -875,13 +885,17 @@ footer {
         width: 20%;
     }
 
-    .education .course .per .circul, .education .course .per .circul1, .education .course .per .circul2 {
+    .education .course .per .circul,
+    .education .course .per .circul1,
+    .education .course .per .circul2 {
         width: 70%;
         height: 50%;
     }
 
-    .education .course .per .circul span,.education .course .per .circul1 span, .education .course .per .circul2 span {
-        font-size: 0.7rem;    
+    .education .course .per .circul span,
+    .education .course .per .circul1 span,
+    .education .course .per .circul2 span {
+        font-size: 0.7rem;
     }
 
     .service .card {
@@ -919,6 +933,7 @@ footer {
     .contact .contact-me {
         border-radius: none;
     }
+
     .contact .contact-me .contact-get .contact-left {
         width: 100%;
         margin-left: 10%;
