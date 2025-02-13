@@ -181,6 +181,36 @@ document.addEventListener("DOMContentLoaded", () => {
   observer.observe(typewriter);
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+  const text = "Welcome to Website, where luxury meets fragrance. Explore our carefully curated collection of timeless classics and modern scents, perfect for every occasion. Indulge in the art of fine perfumery and find your signature scent today!";
+  const typewriter = document.getElementById("perfum");
+
+  let index = 0;
+
+  const revealText = () => {
+    const intervalId = setInterval(() => {
+      if (index < text.length) {
+        typewriter.textContent += text[index];
+        index++;
+      } else {
+        clearInterval(intervalId);
+      }
+    }, 30);
+  };
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        revealText();
+        observer.unobserve(entry.target);
+      }
+    });
+  });
+
+  observer.observe(typewriter);
+});
+
+
 // ANIMATION
 document.addEventListener("DOMContentLoaded", function() {
   const photo = document.querySelector('.content .photo');
