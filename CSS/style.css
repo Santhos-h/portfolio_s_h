@@ -447,8 +447,8 @@ aside {
     height: 80px;
     right: 10%;
     border-radius: 50%;
-    background: radial-gradient(closest-side, rgba(10, 10, 10, 1) 83%, transparent 80% 100%),
-        conic-gradient(white 83%, transparent 0);
+    background: radial-gradient(closest-side, rgba(10, 10, 10, 1) 75%, transparent 80% 100%),
+        conic-gradient(white 75%, transparent 0);
     animation: fillAnimation 3s linear;
 }
 
