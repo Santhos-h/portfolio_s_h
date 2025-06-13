@@ -212,7 +212,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 document.addEventListener("DOMContentLoaded", () => {
   const text = "A clothing shop website is an online platform that displays and sells apparel. It allows users to browse products, filter by category or size, add items to a cart, and complete purchases securely. It offers a convenient way to shop for clothes anytime, anywhere.";
-  const typewriter = document.getElementById("cloth");
+  const typewriter = document.getElementById("clothing");
 
   let index = 0;
 
