@@ -211,7 +211,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-  const text = "A bike showroom is a retail space where customers can explore and purchase a variety of bicycles, ranging from road bikes to mountain bikes, electric bikes, and more. It typically features a wide selection of models, along with accessories such as helmets, gears, and parts. Showrooms may also offer services like test rides, bike repairs, and maintenance.";
+  const text = "A clothing shop website is an online platform that displays and sells apparel. It allows users to browse products, filter by category or size, add items to a cart, and complete purchases securely. It offers a convenient way to shop for clothes anytime, anywhere.";
   const typewriter = document.getElementById("clothing");
 
   let index = 0;
