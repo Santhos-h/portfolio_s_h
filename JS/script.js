@@ -210,6 +210,35 @@ document.addEventListener("DOMContentLoaded", () => {
   observer.observe(typewriter);
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+  const text = "A clothing shop website is an online platform that displays and sells apparel. It allows users to browse products, filter by category or size, add items to a cart, and complete purchases securely. It offers a convenient way to shop for clothes anytime, anywhere.";
+  const typewriter = document.getElementById("cloth");
+
+  let index = 0;
+
+  const revealText = () => {
+    const intervalId = setInterval(() => {
+      if (index < text.length) {
+        typewriter.textContent += text[index];
+        index++;
+      } else {
+        clearInterval(intervalId);
+      }
+    }, 30);
+  };
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        revealText();
+        observer.unobserve(entry.target);
+      }
+    });
+  });
+
+  observer.observe(typewriter);
+});
+
 
 // ANIMATION
 document.addEventListener("DOMContentLoaded", function() {
